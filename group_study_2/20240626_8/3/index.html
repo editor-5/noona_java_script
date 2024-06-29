@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 평가 결과</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        input {
+            padding: 8px;
+            font-size: 16px;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>기술 평가 결과</h1>
+    <label for="skills">사용 가능한 기술:</label>
+    <input type="text" id="skills" placeholder="기술을 쉼표(,)로 구분하여 입력하세요" oninput="evaluateSkills()">
+    <p id="result"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
